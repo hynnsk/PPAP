@@ -66,7 +66,7 @@
     "train": {
         "print_freq": 10,
         "valid_freq": 20,
-        "epoch" : 30,
+        "epoch" : 40,
         "freeze_encoder_bn" : false,
         "freeze_all_bn" : -1,
         "num_accum" : 1,

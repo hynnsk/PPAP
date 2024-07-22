@@ -64,17 +64,12 @@ python eval.py --opt ./json/server/***_eval.json --debug
 Note that all of our experiments are tested on single A6000 GPU.
 
 ### Checkpoints
-checkpoints will be updated soon.
-
-[//]: # (Dataset | Backbone | Model file)
-
-[//]: # ( -- | -- | --)
-
-[//]: # (COCO-stuff | ViT-S/8 | [checkpoint]&#40;https://drive.google.com/file/d/1ugF4s4yvLSCQH967BKjyYVFX5G4pRktP/view?usp=drive_link&#41;)
-
-[//]: # (Cityscapes | ViT-S/8 | [checkpoint]&#40;https://drive.google.com/file/d/1v3kRhRwx3CPOXXgwxOnDKhfjnskrV4bg/view?usp=sharing&#41;)
-
-[//]: # (Cityscapes | ViT-B/8 | [checkpoint]&#40;https://drive.google.com/file/d/1rUQ-qcWw49_g-lp18URTiPdwuaU9lPHK/view?usp=sharing&#41;)
+Dataset | Backbone | Model file
+ -- | -- | --
+COCO-stuff | ViT-S/8 | [checkpoint](https://drive.google.com/file/d/162h3jZfribkfHcGQ_6THp8mLYbnST_P0/view?usp=sharing)
+COCO-stuff | ViT-S/16 | [checkpoint](https://drive.google.com/file/d/1U6fsOnZJev5gj6LTjtb8x1iPjzjy1nOX/view?usp=sharing)
+Cityscapes | ViT-B/8 | [checkpoint](https://drive.google.com/file/d/1kATTeEH3LllmGz3PPyn34lyBxavSUGLe/view?usp=sharing)
+Potsdam-3 | ViT-B/8 | [checkpoint](https://drive.google.com/file/d/1CDngRnD8bVqzuILTmbink61hB4IUVzxE/view?usp=sharing)
 
 
 ## Licence

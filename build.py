@@ -10,7 +10,7 @@ from dataset.data import ContrastiveSegDataset, get_transform
 from torchvision import transforms as T
 from loss import *
 
-def build_model(opt: dict, n_classes: int = 27):
+def build_model(opt: dict, n_classes: int = 27, is_direct=False):
     model_type = opt["name"].lower()
 
     if "stego" in model_type:
