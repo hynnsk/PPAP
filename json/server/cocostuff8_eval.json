@@ -1,0 +1,85 @@
+{
+    "gpu_ids": [0],
+    "output_dir": "./output/",
+    "checkpoint": "ppap_cocostuff8",
+    "wandb": {
+        "project": "PPAP",
+        "entity": "name",
+        "name": "ppap_cocostuff8_eval",
+        "mode": "online"
+    },
+    "dataset": {
+        "data_type": "cocostuff27",
+        "data_path": "/DATA/seg/cocostuff",
+        "loader_crop_type" : "center",
+        "crop_type" : "five",
+        "crop_ratio": 0.5,
+        "res" : 224,
+        "num_neighbors" : 7
+    },
+    "dataloader": {
+        "batch_size": 64,
+        "num_workers": 8
+    },
+    "training_coeff": {
+        "initialcrit_amb": 0.2,
+        "initialcrit_pos": 0.55,
+        "trainpatchsplit": 16,
+        "tau": 0.8,
+        "prop_iter": 2,
+        "sigma_pos": 3,
+        "sigma_amb": 3
+    },
+    "model": {
+        "spatial_size": 28,
+        "name": "STEGO",
+        "arch" : "dino",
+        "continuous" : true,
+        "dim" : 384,
+        "extra_clusters" : 0,
+        "bn_momentum" : null,
+        "bn_eps" : null,
+        "pretrained": {
+            "name": "dino",
+            "model_type": "vit_small",
+            "dino_patch_size": 8,
+            "dino_feat_type" : "feat",
+            "pretrained_weights" : null,
+            "projection_type" : "nonlinear",
+            "dropout" : true
+        }
+    },
+    "optimizer": {
+        "net" : {
+            "name" : "adamw",
+            "lr" : 1e-3,
+            "weight_decay": 0.1
+        },
+        "linear" : {
+            "name" : "adam",
+            "lr" : 1e-3
+        },
+        "cluster" : {
+            "name" : "adam",
+            "lr" : 5e-3
+        }
+    },
+    "train": {
+        "print_freq": 25,
+        "valid_freq": 100,
+        "epoch" : 5,
+        "freeze_encoder_bn" : false,
+        "freeze_all_bn" : -1,
+        "num_accum" : 1,
+        "grad_norm": 10.0
+
+    },
+    "eval": {
+        "extra_clusters" : 0,
+        "n_images": 5,
+        "is_crf" : true,
+        "is_visualize" : false,
+        "is_direct" :  false,
+        "is_diff" : false
+    }
+}
