@@ -1,6 +1,8 @@
 # Progressive Proxy Anchor Propagation for Unsupervised Semantic Segmentation (ECCV 2024)
 Hyun Seok Seong</sup>, WonJun Moon</sup>, SuBeen Lee</sup>, Jae-Pil Heo</sup>
 
+Sungkyunkwan University
+
 [[Arxiv](https://arxiv.org/abs/2407.12463)] | [[Paper]()]
 
 ![main_figure](https://github.com/user-attachments/assets/9721f19d-326d-4033-a1f1-08510276f251)
