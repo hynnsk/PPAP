@@ -1,10 +1,10 @@
-# Leveraging Hidden Positives for Unsupervised Semantic Segmentation (CVPR 2023)
+# Progressive Proxy Anchor Propagation for Unsupervised Semantic Segmentation (ECCV 2024)
 Hyun Seok Seong</sup>, WonJun Moon</sup>, SuBeen Lee</sup>, Jae-Pil Heo</sup>
 
 [[Arxiv](https://arxiv.org/abs/2407.12463)] | [[Paper]()]
 
 <p align="center">
- <img src="https://github.com/hynnsk/PPAP/assets/main_figure.png" width="90%">
+ <img src="https://github.com/hynnsk/PPAP/assets/a8bde8f7-ed75-4c66-b139-49a104b0f5eb" width="90%">
 </p>
 
 ## Abstract
