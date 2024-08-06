@@ -35,6 +35,8 @@ python ./dataset/dataset_download.py
 ```
 Then, extract the zip files.
 
+Next, prepare the cropped dataset using `./dataset/crop_datasets.py`.
+
 ## Training & Evaluation
 You should modify the data path in "<path_to_PPAP>/json/server/cocostuff.json" according to your dataset path.
 
@@ -49,6 +51,8 @@ To train the model, run the code as below:
 python run.py --opt ./json/server/cocostuff.json --debug
 ```
 If you wish to see the training progress through wandb, configure the wandb settings in the JSON file and remove --debug.
+
+In addition, if the cropped datasets are not prepared, modify "crop_type" in the json file from "five" to null. 
 
 To evaluate, you should modify the checkpoint path in "<path_to_PPAP>/json/server/cocostuff_eval.json" according to the saved checkpoint path:
 ```ckpt_path
