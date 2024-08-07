@@ -17,8 +17,8 @@ Install following packages.
 ```
 - python=3.6.9
 - pytorch=1.10.2
-- torchvision=0.9.1
-- torchmetrics=0.8.2
+- torchvision
+- torchmetrics
 - pytorch-lightning
 - matplotlib
 - tqdm
@@ -52,7 +52,7 @@ python run.py --opt ./json/server/cocostuff.json --debug
 ```
 If you wish to see the training progress through wandb, configure the wandb settings in the JSON file and remove --debug.
 
-In addition, if the cropped datasets are not prepared, modify "crop_type" in the json file from "five" to null. 
+If the cropped datasets are not prepared, modify "crop_type" in the json file from "five" to null. 
 
 To evaluate, you should modify the checkpoint path in "<path_to_PPAP>/json/server/cocostuff_eval.json" according to the saved checkpoint path:
 ```ckpt_path
